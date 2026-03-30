@@ -105,15 +105,8 @@ Hei! näillä saatiin komento näyttämään mitä verhon takana tapahtuu.
 <img width="586" height="238" alt="image" src="https://github.com/user-attachments/assets/f93f68d1-ff87-400b-8b3d-baf3de05fd81" />
 
 
-
-
-
-
-
-
-
-
-
 ### Lähteet 
+
 https://terokarvinen.com/ssh-public-key-login-without-password/
+
 https://terokarvinen.com/hello-ansible/
