@@ -36,9 +36,20 @@ kopioidaan avain käyttäjälle
 
 **ssh-copy-id localhost**
 
+
 Syötetään salasana vielä kerran ja tämän jälkeen 
 
+
 **ssh localhost** pitäisi kirjautua sisään ilman salasanaa
+
+(https://terokarvinen.com/ssh-public-key-login-without-password/)
+
+## H1 Hello Ansible
+
+
+### Installing Ansible
+
+
 
 
 
