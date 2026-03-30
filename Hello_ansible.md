@@ -5,7 +5,7 @@
 
 ### SSH:n asennus ja käyttöönottto
 
-Asennetaan OpenSSH
+Asennetaan OpenSSH </br>
 
 *sudo apt-get update*
 
