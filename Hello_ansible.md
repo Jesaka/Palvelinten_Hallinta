@@ -3,7 +3,7 @@
 ## Tiivistelmä SSH Public key
 
 
-### SSH:n asennus ja käyttöönottto
+### (A ja B SSH:n asennus ja käyttöönottto
 
 #### 1. Asennetaan OpenSSH
 
@@ -42,7 +42,7 @@ Syötetään salasana vielä kerran ja tämän jälkeen
 
 (https://terokarvinen.com/ssh-public-key-login-without-password/)
 
-## H1 Hello Ansible
+## (C H1 Hello Ansible
 
 
 ### Installing Ansible
@@ -69,7 +69,7 @@ Ja kokeillaan ajaa komento Ansiblella kaikille hosteille
 <img width="564" height="71" alt="image" src="https://github.com/user-attachments/assets/20163f72-ed67-4ba1-bfb5-271849d7ea5a" />
 
 
-Ansible antoi varoituksen Pythonin tulkista, mutta tässä vain ilmoitetaan että tällainen löytyi ja sitä käytetään. Jos tulevaisuudessa on asennettu jotain muuta niin saatetaan käyttää sitä. Ja uptime tulin näkyviin joten kaikki ok. En koe varoituksen poistamista tarpeelliseksi kunhan ymmärtää mistä se johtuu.
+Ansible antoi varoituksen Pythonin tulkista, mutta tässä vain ilmoitetaan että tällainen löytyi ja sitä käytetään. Jos tulevaisuudessa on asennettu jotain muuta niin saatetaan käyttää sitä. Ja uptime tulin näkyviin joten kaikki ok.
 
 
 ### Hosts.ini käyttäminen asetaaminen konffiin
@@ -77,6 +77,34 @@ Ansible antoi varoituksen Pythonin tulkista, mutta tässä vain ilmoitetaan ett�
 Luomalla ansible.cfg tiedosto ja asetamalla invetory=hosts.ini, voimme ajaa komennon `ansbile all -a "uptime"` mainitsematta hosts.ini tiedostoa. 
 
 <img width="566" height="131" alt="image" src="https://github.com/user-attachments/assets/2a900ed8-1c08-44f2-9dba-8e11824ce12a" />
+
+
+Kommentti: Tajusin tässä vaiheessa että python varoituksen poistaminen oli unohtunut joten se on tehty tässä vaiheessa.
+
+<img width="350" height="106" alt="image" src="https://github.com/user-attachments/assets/e8f900c4-e48f-4fd6-a561-1672ce8d0256" />
+
+
+### Site.yml
+
+Tässä vaiheessa huomaan etten enään pysy kovin hyvin kärryillä mitä tapahtuu. En päässyt ensimmäiselle tunnille zoom ongelmien vuoksi, joten tästä eteenpäin noudatan puhtaasti vain ohjeita sen syvemmin ymmärtämättä mitä teen.
+
+<img width="584" height="101" alt="image" src="https://github.com/user-attachments/assets/7aef0cdf-4382-475e-9ed5-42c3a2460fd3" />
+
+### Tiedoston luonti 
+
+
+Tehtävä näyttää onnistuneen samalla tavalla kuin opettajan ohjeissa.
+
+
+<img width="589" height="209" alt="image" src="https://github.com/user-attachments/assets/4c0be060-2e1a-4f59-93fc-40f93a0fddad" />
+
+### Näytä mitä teet
+
+Hei! näillä saatiin komento näyttämään mitä verhon takana tapahtuu.
+
+<img width="586" height="238" alt="image" src="https://github.com/user-attachments/assets/f93f68d1-ff87-400b-8b3d-baf3de05fd81" />
+
+
 
 
 
