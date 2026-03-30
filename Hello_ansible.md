@@ -45,7 +45,7 @@ Syötetään salasana vielä kerran ja tämän jälkeen
 ## (C H1 Hello Ansible
 
 
-### Installing Ansible
+### Ansible asennus
 
 Komento kuten opintomateriaaleissa (https://terokarvinen.com/hello-ansible/)
 
