@@ -104,6 +104,11 @@ Hei! näillä saatiin komento näyttämään mitä verhon takana tapahtuu.
 
 <img width="586" height="238" alt="image" src="https://github.com/user-attachments/assets/f93f68d1-ff87-400b-8b3d-baf3de05fd81" />
 
+## MUISTIINPANOJA TUNNILTA MUOKATTU 1.4
+
+<img width="664" height="228" alt="image" src="https://github.com/user-attachments/assets/1bc3d3f5-7f45-4922-a3c2-3371b1a8c3d4" />
+
+
 
 ### Lähteet 
 
