@@ -1,4 +1,4 @@
-# Kotitehtävä 2 Sandwich 6.4.2026 0800
+# Kotitehtävä 2 Sandwich 6.4.2026 0800-0930 ja 
 
 
 ## Tiivistelmät
