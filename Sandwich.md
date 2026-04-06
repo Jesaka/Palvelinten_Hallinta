@@ -1,4 +1,4 @@
-# Kotitehtävä 2 Sandwich 6.4.2026 0800-0930 ja 
+# Kotitehtävä 2 Sandwich 6.4.2026 0800-0930 ja 2030
 
 
 ## Tiivistelmät
@@ -123,6 +123,28 @@ SSH avaimien lisääminen tai poistaminen käyttäjiltä
 
 
 https://docs.ansible.com/projects/ansible/latest/cli/ansible-doc.html#description (Viitattu 6.4.2026)
+
+### a) Sudoless
+
+Loin uuden käyttäjän "santero" ja loin sudoless ryhmään johon käyttäjä lisättiin
+
+
+<img width="349" height="151" alt="image" src="https://github.com/user-attachments/assets/f163758e-0e09-440e-a2f9-71151717a932" />
+
+Avasin uuden terminaalin johon avasin roottishellin
+
+Tämän jlkeen asetukset kondikseen sudoers.d taakse
+
+<img width="229" height="20" alt="image" src="https://github.com/user-attachments/assets/ac5545ce-34c5-4bb2-8d39-6e8991096000" />
+
+Tämän jälkeen SSH:lla sisään @localhost ja sudo komento joka ei kysy salasanaa, eli toimii
+
+<img width="209" height="26" alt="image" src="https://github.com/user-attachments/assets/4b1b6415-b2b5-4fb9-8c3b-1f61a006ef52" />
+
+
+(https://terokarvinen.com/passwordless-sudo/ Viitattu 6.4.2026)
+
+
 
 ## Lähteet
 https://docs.ansible.com/projects/ansible/latest/dev_guide/developing_python_3.html#unicode-sandwich-common-borders-places-to-convert-bytes-to-text-in-control-node-code
