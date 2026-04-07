@@ -143,6 +143,62 @@ Tämän jälkeen SSH:lla sisään @localhost ja sudo komento joka ei kysy salasa
 
 ### c) Salasanaton SSH
 
+Salasanaton SSH tehty samalla tavalla kuin edellisessä tehtävässä, https://github.com/Jesaka/Palvelinten_Hallinta/blob/main/Hello_ansible.md mutta uudelle käyttäjälle 
+
+<img width="366" height="118" alt="image" src="https://github.com/user-attachments/assets/40f93b46-978c-4ed9-a85d-47dbbdd2168f" />
+
+### (d Asenna 2 pakettia Ansiblella
+
+Olin tehnyt samanlaisen rakenteen Ansibleen kun edellisessä tehtävässä. Tässä kirjoitin vain uuden main.yml tiedoston (SS otettu playbookin ajamisen jälkeen kun tree on jo asentunut)
+
+<img width="491" height="226" alt="image" src="https://github.com/user-attachments/assets/96ece0a8-52b4-45c2-a104-3c1007a127bc" />
+
+
+Ja ajoin playbookin
+
+<img width="557" height="114" alt="image" src="https://github.com/user-attachments/assets/209efbf5-dd77-49c6-b0f6-8c48b25d2100" />
+
+
+`htop` Testi, paketti asentunut ja toimii
+
+
+<img width="560" height="197" alt="image" src="https://github.com/user-attachments/assets/0a7e5238-827b-43e4-9502-aa06dfdc569e" />
+
+
+`tree`asentunut ja toimii
+
+
+<img width="302" height="113" alt="image" src="https://github.com/user-attachments/assets/563cde76-3cc2-493b-a058-d98fc921c1cf" />
+
+### (d Filejä orjalle
+
+Kirjoitin samaan main.yml tiedostoon toisen tehtävän. Ja kun ajoin playbookin palauttaa se tällaisen.
+
+<img width="622" height="77" alt="image" src="https://github.com/user-attachments/assets/bc30d01f-d51d-43ec-a64d-d0261bc0a2ff" />
+
+Ja tässä vielä lopputulos
+
+<img width="256" height="62" alt="image" src="https://github.com/user-attachments/assets/bdc2a61d-ed38-47ae-a901-204427389660" />
+
+### e) Jotain muuta 
+
+Tein playbookkiin uuden käyttäjän luomisen. Ansible ei documentaation mukaan ota vastaan selkokielisiä salasanoja, joten asensin koneelle mkpasswdn
+
+Komennot:
+`sudo apt install whois`
+`mkpasswd --method=sha-512 "Kirjoita tähän kohtaan salasana ilman heittomerkkejä"`
+
+tämän jälkeen lisäsin saadun hashatun salasanan kohtaan password playbookissa
+
+
+<img width="585" height="65" alt="image" src="https://github.com/user-attachments/assets/76d46324-68af-494c-adf6-dff4c5e086b6" />
+
+
+
+
+
+
+
 
 (https://terokarvinen.com/passwordless-sudo/ Viitattu 6.4.2026)
 
