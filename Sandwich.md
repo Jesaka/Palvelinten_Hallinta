@@ -141,6 +141,8 @@ Tämän jälkeen SSH:lla sisään @localhost ja sudo komento joka ei kysy salasa
 
 <img width="209" height="26" alt="image" src="https://github.com/user-attachments/assets/4b1b6415-b2b5-4fb9-8c3b-1f61a006ef52" />
 
+### c) Salasanaton SSH
+
 
 (https://terokarvinen.com/passwordless-sudo/ Viitattu 6.4.2026)
 
