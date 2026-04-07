@@ -1,5 +1,7 @@
-# Kotitehtävä 2 Sandwich 6.4.2026 0800-0930 ja 2030-2155
+# Kotitehtävä 2 Sandwich 6.4.2026 0800-0930 ja 2030-2155 ja 7.4.2026 1715-1815
 
+## Johdanto
+Tämä kotitehtävä oli hiukan haastava. Oli vaikea ymmärtää Ansiblen toimintaa oppintuntien perusteella. Jouduin käyttämään aikaa paljon documentaation lukemiseen ja joissain kohdissa olen kysynyt Microsoft copilottia opettamaan miten ansible toimii, jotta saan paremman ymmärryksen ohjelman toiminnasta. Luulen kuitenkin että tehtävä selkeytti hiukan miksi tunnilla tehty kansiorakenne on kuten on ja miten Playbookkia käytetään.
 
 ## Tiivistelmät
 
@@ -141,6 +143,9 @@ Tämän jälkeen SSH:lla sisään @localhost ja sudo komento joka ei kysy salasa
 
 <img width="209" height="26" alt="image" src="https://github.com/user-attachments/assets/4b1b6415-b2b5-4fb9-8c3b-1f61a006ef52" />
 
+
+(https://terokarvinen.com/passwordless-sudo/ Viitattu 6.4.2026)
+
 ### c) Salasanaton SSH
 
 Salasanaton SSH tehty samalla tavalla kuin edellisessä tehtävässä, https://github.com/Jesaka/Palvelinten_Hallinta/blob/main/Hello_ansible.md mutta uudelle käyttäjälle 
@@ -192,15 +197,6 @@ tämän jälkeen lisäsin saadun hashatun salasanan kohtaan password playbookiss
 
 
 <img width="585" height="65" alt="image" src="https://github.com/user-attachments/assets/76d46324-68af-494c-adf6-dff4c5e086b6" />
-
-
-
-
-
-
-
-
-(https://terokarvinen.com/passwordless-sudo/ Viitattu 6.4.2026)
 
 
 
