@@ -5,19 +5,11 @@
 ### Apache asennettuna ansiblella
 
 - Tee conf käsin ja kokeile että se toimii ennen automatisointia
-- Selkeä puurakenne helpottaa tekemistä:
 
   
-roles/apache2/  # All files related to "apache2" role
-├── files/      # Master copies of files
-│   └── example.com.conf
-├── handlers/   # restarting services
-│   └── main.yml
-└── tasks/      # most ansible code
-    └── main.yml
 ### Handlerit
 
-- Handlerit ovat erityisiä tehtäviä, jotka suoritetaan vain silloin, kun jokin varsinainen tehtävä ilmoittaa niille (notify) ja aiheuttaa muutoksen.
+- Handlerit on tehtäviä, jotka suoritetaan vain silloin, kun jokin varsinainen tehtävä ilmoittaa niin ja aiheuttaa muutoksen.
 - Niitä käytetään tyypillisesti palveluiden uudelleenkäynnistämiseen, konfiguraation lataamiseen tai muihin toimenpiteisiin, joita ei haluta tehdä turhaan jokaisella ajolla.
 - Useat tehtävät voivat ilmoittaa samalle handlerille, mutta handler suoritetaan silti vain kerran kunkin play‑osion lopussa.
 
@@ -96,18 +88,6 @@ Lopputuloksena ajettu playbook toimii oikein, changed näkyy = 0, koska se on te
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Lähteet
 
 https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
@@ -115,20 +95,6 @@ https://terokarvinen.com/apache-ansible/
 https://nginx.org/en/docs/beginners_guide.html
 https://github.com/Jesaka/Palvelinten_Hallinta/blob/main/Hello_ansible.md
 
-# NäÄMÄ ON MUISTIINPANOJA
-Apache2 .conf tiedosto
-<img width="284" height="103" alt="image" src="https://github.com/user-attachments/assets/34c0084d-286c-42b2-9614-0e5b0e060a36" />
 
-
-<img width="510" height="327" alt="image" src="https://github.com/user-attachments/assets/8255bfab-8dc7-47dc-b5fe-2db0fa687ca0" />
-
-Master slave arkkitehtuuri COPY:n DEST määrittää mihin orja saa uuden tiedoston. Kansiorakenteessa on taas määritetty että tiedoston src on files kansiossa KOPIOI TÄMÄ TIEDOSTO
-
-
-
-<img width="897" height="277" alt="image" src="https://github.com/user-attachments/assets/049a7559-ef8d-446d-8e49-570b7ca16c81" />
-
-
-<img width="1135" height="641" alt="image" src="https://github.com/user-attachments/assets/727867cd-a474-4136-89b4-8ad74357862b" />
 
 
