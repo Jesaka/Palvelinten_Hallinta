@@ -71,15 +71,29 @@ ja lopputuloksena
 
 ## c) Automoottorix
 
+Seurasin tässä tehtävässä hyvin tarkasti opettajan ohjeita https://terokarvinen.com/apache-ansible/. Tehtävän tekeminen antoi hyvän käsityksen miten ansiblen rakenne toimii.
+
+Ensimmäisenä loin kansiorakenteen ja tein tyhjät tiedostot paikalleen  (hello kansio ei ole relevantti tehtävän kannalta, vaan se on tehty aikaisemmin asniblea kokeillessa. Kansiot jota tehtävässä on tarvittu on kaikki muut paitsi nginx.
+
+<img width="626" height="297" alt="image" src="https://github.com/user-attachments/assets/48009511-9b9b-4c39-91c2-7e8d3c7dc8f4" />
+
+Seuraavaksi tein tiedostot ja muutin tarvittavat polut omaan järjestelmään sopivaksi (SS on otettu kun tehtävä on tehty joten become:yes joka mainitaan seuraavassa kohdassa on jo paikallaan.
+
+<img width="914" height="559" alt="image" src="https://github.com/user-attachments/assets/b2344f71-795c-4251-8ca0-525ba412bb7c" />
 
 
 Tässä kohti ajoin playbookin ja sain seuraavan virheilmoituksen. Ilmeisesti ansible tarvitsee erillisen käskyn käyttää sudoa, kun se asentaa `apt` komennolla paketteja. Korjattu laittamalla tasks alle become:yes rivi.
 
 <img width="1143" height="254" alt="image" src="https://github.com/user-attachments/assets/9e2e1928-95a9-418f-b86f-972c13743f2f" />
 
-Ansible kysyy jostain syystä sudon salasanaa vaikka tämä pitäisi olla jo tehtynä siten että käyttäjältä ei kysytä sudo salasanaa korjattu lisäämällä käyttäjä sudoless ryhmään joka on tehty raportissa 
+Ansible kysyy jostain syystä sudon salasanaa vaikka tämä pitäisi olla jo tehtynä siten että käyttäjältä ei kysytä sudo salasanaa korjattu lisäämällä käyttäjä sudoless ryhmään joka on tehty raportissa https://github.com/Jesaka/Palvelinten_Hallinta/blob/main/Hello_ansible.md
 
 <img width="1107" height="159" alt="image" src="https://github.com/user-attachments/assets/65ae3f7e-e537-4b60-bcac-b227dab86b2d" />
+
+Lopputuloksena ajettu playbook toimii oikein, changed näkyy = 0, koska se on tehty localhostiin ja samalle käyttäjälle -> Kun mikään ei muutu niin tiedostot ovat omalla samalla paikallaan ja homma toimii yhä
+
+<img width="1281" height="361" alt="image" src="https://github.com/user-attachments/assets/75484f55-c995-45ce-9963-d127b997ef21" />
+
 
 
 
@@ -99,6 +113,7 @@ Ansible kysyy jostain syystä sudon salasanaa vaikka tämä pitäisi olla jo teh
 https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
 https://terokarvinen.com/apache-ansible/
 https://nginx.org/en/docs/beginners_guide.html
+https://github.com/Jesaka/Palvelinten_Hallinta/blob/main/Hello_ansible.md
 
 # NäÄMÄ ON MUISTIINPANOJA
 Apache2 .conf tiedosto
