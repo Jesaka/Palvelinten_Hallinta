@@ -69,6 +69,17 @@ ja lopputuloksena
 
 <img width="825" height="247" alt="image" src="https://github.com/user-attachments/assets/2fd165d3-d1c7-4fc5-9ce5-2b92f3cadc3a" />
 
+## c) Automoottorix
+
+
+
+Tässä kohti ajoin playbookin ja sain seuraavan virheilmoituksen. Ilmeisesti ansible tarvitsee erillisen käskyn käyttää sudoa, kun se asentaa `apt` komennolla paketteja. Korjattu laittamalla tasks alle become:yes rivi.
+
+<img width="1143" height="254" alt="image" src="https://github.com/user-attachments/assets/9e2e1928-95a9-418f-b86f-972c13743f2f" />
+
+Ansible kysyy jostain syystä sudon salasanaa vaikka tämä pitäisi olla jo tehtynä siten että käyttäjältä ei kysytä sudo salasanaa korjattu lisäämällä käyttäjä sudoless ryhmään joka on tehty raportissa 
+
+<img width="1107" height="159" alt="image" src="https://github.com/user-attachments/assets/65ae3f7e-e537-4b60-bcac-b227dab86b2d" />
 
 
 
@@ -82,6 +93,12 @@ ja lopputuloksena
 
 
 
+
+## Lähteet
+
+https://docs.ansible.com/projects/ansible/latest/playbook_guide/playbooks_handlers.html
+https://terokarvinen.com/apache-ansible/
+https://nginx.org/en/docs/beginners_guide.html
 
 # NäÄMÄ ON MUISTIINPANOJA
 Apache2 .conf tiedosto
