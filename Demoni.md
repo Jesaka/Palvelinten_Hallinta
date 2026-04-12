@@ -59,7 +59,19 @@ Kun konffi oli tehty `sudo sytemctl restart nginx` ja tarkistin näkyykö sivu.
 
 <img width="1275" height="236" alt="image" src="https://github.com/user-attachments/assets/e62e5b63-bc2a-49ea-8a4e-f32f8464e8f4" />
 
-Ei näy vielä, mutta saadaan oikean näköinen virheilmoitus, sivu ei näy koska konffissa olluta kansiorakennetta ja index.html tiedostoa ei ole vielä tehty
+Ei näy vielä, mutta saadaan oikean näköinen virheilmoitus, sivu ei näy koska konffissa olluta kansiorakennetta ja index.html tiedostoa ei ole vielä tehty.
+
+Tein tiedoston ja uudelleenkäynnistin nginx
+
+<img width="709" height="309" alt="image" src="https://github.com/user-attachments/assets/643fc527-4e49-4fa6-8081-bcff58872fe5" />
+
+ja lopputuloksena 
+
+<img width="825" height="247" alt="image" src="https://github.com/user-attachments/assets/2fd165d3-d1c7-4fc5-9ce5-2b92f3cadc3a" />
+
+
+
+
 
 
 
