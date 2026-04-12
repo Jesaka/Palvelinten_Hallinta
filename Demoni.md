@@ -25,7 +25,7 @@ Apache2 oli jo asennettuna tunnin jäljiltä, joten tein vain uudet konfiguraati
 
 <img width="727" height="206" alt="image" src="https://github.com/user-attachments/assets/32860470-7ec0-4ffa-8396-f38eed06d2b3" />
 
-Tässä välissä kun conffit on tehty sudo a2 `sudo a2dissite 000-default.conf` Deafult sivu pois päältä `sudo a2ensite sivun.konftiedoston.nimi.conf` Uusi sivu päälle  ja  `sudo systemctl restart apache2` niin uudet asetukset tallentuvat 
+Tässä välissä kun conffit on tehty `sudo a2dissite 000-default.conf` Deafult sivu pois päältä `sudo a2ensite sivun.konftiedoston.nimi.conf` Uusi sivu päälle  ja  `sudo systemctl restart apache2` niin uudet asetukset tallentuvat 
 
 <img width="645" height="59" alt="image" src="https://github.com/user-attachments/assets/946d3d0c-9b0c-4feb-9490-f66f26f823d5" />
 
