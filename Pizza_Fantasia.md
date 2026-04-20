@@ -57,6 +57,15 @@ Tämän jälkeen uudelleenkäynnistin demonin komennolla `sudo systemctl restart
 
 <img width="1280" height="336" alt="image" src="https://github.com/user-attachments/assets/6529ca64-29ed-4c43-9877-13d019d77eb8" />
 
+### Automatisointi
+
+Aloitin tekemällä Saman kansiorakenteen kun aikaisemmin toimivaksi todetusti nginx:ää automatisoidessa.
+
+<img width="627" height="245" alt="image" src="https://github.com/user-attachments/assets/0745d9c2-36b0-45d1-a030-799c0e800848" />
+
+
+
+
 
 
 
