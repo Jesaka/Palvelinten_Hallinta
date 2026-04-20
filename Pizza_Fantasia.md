@@ -65,6 +65,13 @@ Aloitin tekemällä Saman kansiorakenteen kun aikaisemmin toimivaksi todetusti n
 
 
 
+ONGELMA: 
+
+CADDY EI SUOSTU UUDELLEENKÄYNNISTYMÄÄN ANSIBLELLA AJAETTUNA?? JOSTAIN SYYSTÄ SYSTEEMI TIME OUTTAA. KONFFIT PITÄISI OLLA OIKEIN, TIEDOSTOT PAIKALLAAN JA JOURNACTL EI NÄY MITÄÄN FIKSUA APUA. EN YMMÄRRÄ??????
+<img width="1163" height="357" alt="image" src="https://github.com/user-attachments/assets/61d395ef-5c2f-4bf9-b1b5-f5a54a6f444a" />
+
+
+
 
 
 
