@@ -1,4 +1,4 @@
-# Pizza fantasia 20.4,2026 1915
+# Pizza fantasia 20.4,2026 1915 2130. Jatkettu 21.4.2026 0730-
 
 ## Tiivistelmä
 - DSL voi kasvaa helposti isoksi ja vaikeasti ymmmärrettäväksi.
@@ -63,14 +63,29 @@ Aloitin tekemällä Saman kansiorakenteen kun aikaisemmin toimivaksi todetusti n
 
 <img width="627" height="245" alt="image" src="https://github.com/user-attachments/assets/0745d9c2-36b0-45d1-a030-799c0e800848" />
 
+Tämän jälkeen loin tarvittavat tiedostot. Kun koko paketti oli luotu lähdin korjaamaan virheitä. Ansible antoi joka playbook ajolla muutamia virheitä, en käsittele kaikkia toistuvia erikseen koska korjasin lähinnä 2 asiaa:
+
+1. Kirjoitusvirheet main.yml tiedostoissa
+2. Become: yes lisääminen taskeihin kun pitää sudottaa prosessi.
 
 
-ONGELMA: 
+### Ongelma: Caddy conffi ei mene sisään ansible ajossa.
 
-CADDY EI SUOSTU UUDELLEENKÄYNNISTYMÄÄN ANSIBLELLA AJAETTUNA?? JOSTAIN SYYSTÄ SYSTEEMI TIME OUTTAA. KONFFIT PITÄISI OLLA OIKEIN, TIEDOSTOT PAIKALLAAN JA JOURNACTL EI NÄY MITÄÄN FIKSUA APUA. EN YMMÄRRÄ??????
+Vikakuvaus: Ajaessa Ansiblen playbookki saan takaisin virheilmoituksen Caddy reload time outtaa. Koitin tehdä handlerssiin myös restart komennon, joka tuottaa saman lopputuloksen.
+
+
 <img width="1163" height="357" alt="image" src="https://github.com/user-attachments/assets/61d395ef-5c2f-4bf9-b1b5-f5a54a6f444a" />
 
 
+Toimpenpiteet: 
+- Tarkistin että kaikki polut annetaan tiedostoissa oikein. (Ei ratkaisua)
+- Tarkistin että ansiblen ajo on todellisuudessa uudelleenkirjoittanut tiedoston (Ei ratkaisu)
+- Tarkistin että directoryilla on  x oikeudet ja index.html tiedosto on others luettavissa. (Ei ratkaisu)
+- Pallottelin tekoälyn kanssa asiaa ja niinkuin arvata saattaa sain paljon outoja vikakorjauksia (Tunti elämästäni jota en saa takaisin), mutta lopulta copilot osasi sanoa että luomani /home/santero/caddy kansio tarvitsee mtyös read oikeuden. Tämä ratkaisi ongelman. En muista puhuttiinko tunnilla että tällaiselle olisi tarve, jos käytiin olin täysin unohtanut sen. Mutta viimein sain sivun päivittymään siihen minkä ansible oli ajanut sisään.
+
+
+
+<img width="1277" height="349" alt="image" src="https://github.com/user-attachments/assets/6b104d0e-d118-4020-98d9-49a7c6e5373e" />
 
 
 
@@ -82,18 +97,9 @@ CADDY EI SUOSTU UUDELLEENKÄYNNISTYMÄÄN ANSIBLELLA AJAETTUNA?? JOSTAIN SYYSTÄ
 1. Asennus (Pitääkö komennot ajaa uudestaan?)
 2. Config file on /etc/caddy/Caddyfile ja sen sisältö:
    
-# The Caddyfile is an easy way to configure your Caddy web server.
-#
-# Unless the file starts with a global options block, the first
-# uncommented line is always the address of your site.
-#
-# To use your own domain name (with automatic HTTPS), first make
-# sure your domain's A/AAAA DNS records are properly pointed to
-# this machine's public IP, then replace ":80" below with your
-# domain name.
-
+``` Caddyfile
 :80 {
-	# Set this path to your site's directory.
+
 	root * /usr/share/caddy
 
 	# Enable the static file server.
@@ -105,15 +111,15 @@ CADDY EI SUOSTU UUDELLEENKÄYNNISTYMÄÄN ANSIBLELLA AJAETTUNA?? JOSTAIN SYYSTÄ
 	# Or serve a PHP site through php-fpm:
 	# php_fastcgi localhost:9000
 }
-
-# Refer to the Caddy docs for more information:
-# https://caddyserver.com/docs/caddyfile
-
+```
 3. Index.html paikalleen.
+4. Tarkista kansiorakenteen oikeudet, minulla index.html hakemisto tarvitsi r oikeuden.
 
 ## Lähteet 
 
 https://caddyserver.com/docs/install#debian-ubuntu-raspbian
+
+https://caddyserver.com/docs/quick-starts
 
 https://westminsterresearch.westminster.ac.uk/item/w7vvz/configuration-management-of-distributed-systems-over-unreliable-and-hostile-networks
 
